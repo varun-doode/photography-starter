@@ -1,6 +1,5 @@
 # Photography Starter
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white)
 ![No build step](https://img.shields.io/badge/build-none-brightgreen)
 
@@ -67,7 +66,3 @@ A ready-made GitHub Actions workflow is included at
 
 For a custom domain (e.g. `yourname.photography`) and SEO/analytics tips, see the
 [full guide](https://github.com/varun-doode/photography-website-guide).
-
-## License
-
-MIT — free to use and adapt.
