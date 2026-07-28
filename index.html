@@ -99,14 +99,25 @@
     <div class="container">
       <h2 class="section-title">Book a Session</h2>
       <p class="section-sub">Pick a time that works for you</p>
+
       <!--
-        Replace this placeholder with your real Calendly inline embed:
-        <div class="calendly-inline-widget" data-url="https://calendly.com/your-name/session" style="min-width:320px;height:700px;"></div>
-        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        ┌─────────────────────────────────────────────────────────────┐
+        │ TODO: replace YOUR-CALENDLY-SLUG below with your own.         │
+        │ 1. Sign up free at https://calendly.com                       │
+        │ 2. Create an event type (e.g. "Portrait Session – 60 min").   │
+        │ 3. Your public link looks like:                               │
+        │      https://calendly.com/<your-name>/portrait-session        │
+        │ 4. Put the part after calendly.com/ into data-url below.      │
+        └─────────────────────────────────────────────────────────────┘
       -->
-      <div class="form" style="text-align:center;">
-        <p class="note">📅 Booking widget goes here. Embed <a href="https://calendly.com" style="color:var(--accent);">Calendly</a> or <a href="https://cal.com" style="color:var(--accent);">Cal.com</a> — see the README for the snippet. For now, use the contact form below to request a date.</p>
-      </div>
+      <div class="calendly-inline-widget"
+           data-url="https://calendly.com/YOUR-CALENDLY-SLUG/portrait-session"
+           style="min-width:320px;height:700px;"></div>
+      <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+      <p class="note">📅 The Calendly widget above goes live once you replace
+        <code>YOUR-CALENDLY-SLUG</code> in <code>index.html</code>. Prefer open-source?
+        Swap it for a <a href="https://cal.com" style="color:var(--accent);">Cal.com</a> embed.</p>
     </div>
   </section>
 
@@ -139,14 +150,26 @@
     <div class="container">
       <h2 class="section-title">Contact</h2>
       <p class="section-sub">Tell me about your shoot</p>
-      <!-- Replace YOUR_FORM_ID with a real Formspree form id to make this live -->
+      <!--
+        ┌─────────────────────────────────────────────────────────────┐
+        │ TODO: replace YOUR_FORM_ID below with your own.               │
+        │ 1. Sign up free at https://formspree.io                       │
+        │ 2. Create a new form; it gives you an endpoint like           │
+        │      https://formspree.io/f/abcdwxyz                          │
+        │ 3. Put the id (abcdwxyz) in the action URL below.             │
+        │ Submissions then arrive in your Formspree inbox + email.      │
+        └─────────────────────────────────────────────────────────────┘
+      -->
       <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <input type="text" name="name" placeholder="Your name" required />
         <input type="email" name="email" placeholder="Your email" required />
-        <textarea name="message" placeholder="What are you looking for?"></textarea>
+        <!-- Optional: redirect back to your site after submit -->
+        <input type="hidden" name="_subject" value="New inquiry from your photography site" />
+        <textarea name="message" placeholder="What are you looking for?" required></textarea>
         <button type="submit" class="btn">Send message</button>
       </form>
-      <p class="note">Form uses <a href="https://formspree.io" style="color:var(--accent);">Formspree</a> — add your form ID to activate it.</p>
+      <p class="note">This form uses <a href="https://formspree.io" style="color:var(--accent);">Formspree</a> —
+        it goes live once you replace <code>YOUR_FORM_ID</code> in <code>index.html</code>.</p>
     </div>
   </section>
 
